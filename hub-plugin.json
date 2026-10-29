@@ -1,0 +1,38 @@
+{
+  "name": "analyst",
+  "kind": "specialist",
+  "version": "0.1.3",
+  "hub": "^1",
+  "icon": "📊",
+  "description": "Analyst: pulls the main points and dependencies out of data, researches the market and advertising at the owner's request; short conclusions with a TL;DR",
+  "why": "A ready-made analyst instead of building your own: method, conclusion format, collection kept apart from conclusions, check cases",
+  "agent": {
+    "cwd": "~/analyst",
+    "tools": {
+      "need": [],
+      "optional": [
+        {
+          "id": "parallel-web-search",
+          "why": "fast web search for research"
+        },
+        {
+          "id": "parallel-web-extract",
+          "why": "reading pages and PDFs, including behind JS"
+        },
+        {
+          "id": "parallel-deep-research",
+          "why": "long research on an explicit request"
+        },
+        {
+          "id": "grafana",
+          "why": "metrics and SQL of your product, read only"
+        },
+        {
+          "id": "buffer",
+          "why": "metrics of social media posts"
+        }
+      ]
+    },
+    "cases": "evals/cases.md"
+  }
+}
